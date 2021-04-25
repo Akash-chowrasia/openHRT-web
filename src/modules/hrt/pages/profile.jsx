@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { PageWrapper, Form } from "../../components/wrappers";
 import { CssGrid } from "../../../commons/components/css-grid";
 import Typography from "@material-ui/core/Typography";
+import TextField from "@material-ui/core/TextField";
 
 const Profile = () => {
+  const [data, setData] = useState({ name: "", email: "", password: "" });
+  const handleChange = (e) => {
+    setData(() => {
+      data[e.target.name] = e.target.value;
+      return data;
+    });
+  };
   return (
     <PageWrapper>
       <CssGrid placeItems="center" gap={1}>
