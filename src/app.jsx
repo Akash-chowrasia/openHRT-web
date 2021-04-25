@@ -29,8 +29,8 @@ const RootComp = styled.div`
   display: grid;
   height: 100vh;
   .navbar {
-    position: absolute,
-    width: 100vw,
+    position: absolute;
+    width: 100vw;
   }
 `;
 
