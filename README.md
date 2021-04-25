@@ -1,1 +1,0 @@
-# hrt-assistant-frontend
