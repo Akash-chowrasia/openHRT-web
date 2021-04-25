@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { LoadingIndicator } from "./commons/components/loading-indicator";
 import { TraverseRoutes } from "./commons/components/traverse-routes";
 import { theme } from "./commons/theme";
-import { NavBar } from "./modules/partials/nav";
+import NavBar from "./modules/partials/nav";
 
 const routes = [
   {
@@ -28,6 +28,10 @@ const routes = [
 const RootComp = styled.div`
   display: grid;
   height: 100vh;
+  .navbar {
+    position: absolute,
+    width: 100vw,
+  }
 `;
 
 export default function App() {
