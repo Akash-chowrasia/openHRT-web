@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { LoadingIndicator } from "./commons/components/loading-indicator";
 import { TraverseRoutes } from "./commons/components/traverse-routes";
 import { theme } from "./commons/theme";
+import { NavBar } from "./modules/partials/nav";
 
 const routes = [
   {
@@ -35,6 +36,7 @@ export default function App() {
       <Suspense fallback={<LoadingIndicator when />}>
         <RootComp>
           <BrowserRouter>
+            <NavBar />
             <TraverseRoutes routes={routes} />
           </BrowserRouter>
         </RootComp>
